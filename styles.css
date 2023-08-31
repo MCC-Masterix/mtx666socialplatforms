@@ -1,0 +1,225 @@
+creator{
+  color:rgba(255, 255, 255, 0.418);
+  float:right;
+  font-weight:bold;
+  position:absolute;
+  margin:3px;
+  font-size: 14px;
+}
+copyright{
+  bottom:0px;
+  position:absolute;
+  left:0;
+  right:0;
+  color:white;
+  text-align:center;
+  z-index:9;
+  margin-bottom:5px;
+}
+.social-icon {
+  width: 50px;
+  height: 30px;
+  margin:5px;
+  float:left;
+  border-radius:0px;
+}
+.social-icon_YTMusic {
+  width: 37px;
+  height: 37px;
+  margin:10px;
+  float:left;
+  border-radius:0px;
+}
+.social-icon_IG {
+  width: 35px;
+  height: 35px;
+  margin:11px;
+  float:left;
+  border-radius:0px;
+}
+.social-icon_TT {
+  width: 65px;
+  height: 65px;
+  margin:-3px;
+  float:left;
+  border-radius:0px;
+}
+.social-icon_Email {
+  width: 45px;
+  height: 45px;
+  margin:5px;
+  float:left;
+  border-radius:0px;
+}
+.social-icon_ThumbnailSong {
+  width: 90px;
+  height: 90px;
+  margin:5px;
+  float:left;
+  border-radius:0px;
+  border-radius:10px
+}
+.more-icon {
+  height: 25px;
+  margin:5px;
+  float:left;
+  border-radius:0px;
+  border-radius:10px
+}
+body {
+  background-image: url(https://s3.eu-west-2.amazonaws.com/img.creativepool.com/files/candidate/portfolio/full/1908193.jpg);
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 140vh;
+  width: 100vw;
+    backdrop-filter: blur(60px);
+    margin:0;
+    background-color: black;
+    display: block;
+    padding: 0;
+    overflow-x: hidden;
+    top:0;
+    bottom:0;
+    position: absolute;
+}
+img{
+  border-radius:110px;
+  user-select:none;
+  margin-left:46.5%;
+  margin-top:5%;
+  -webkit-user-drag: none;
+}
+button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:none;
+  background: black;
+  color:white;
+  width:50%;
+  height:7%;
+  font-size:18px;
+  border-radius:10px;
+  opacity:75%;
+  margin:5px;
+  margin-left:25%;
+  padding: 5px 10px;
+  cursor:pointer;
+  user-select: none;
+  transition: 0.1s;
+}
+button:hover{
+  transform:scaleX(1.03);
+  background: rgb(15, 15, 15);
+}
+.moreBtn{
+  width:34px;
+  height:34px;
+  border-radius:20px;
+  background:#5f5f5f;
+  float:right;
+  margin:30px;
+  padding-bottom:12px;
+  padding-left:9.5px;
+  font-weight:bold;
+  z-index:9999;
+}
+.releaseBtn{
+  border:1px #888 solid;
+  height:10%;
+}
+.thumbnailsongDiv{
+  display:block;
+  background:rgb(128, 128, 128)
+}
+.popupRelease{
+  position:absolute;
+  top:25%;
+  left:35%;
+  background: #d6d6d6;
+  color:black;
+  height: 30%;
+  width:30%;
+  z-index:99;
+  border-radius:10px;
+  display:none;
+  transition: opacity 1s, visibility 1s;
+}
+.popupMore{
+  position:absolute;
+  top:10%;
+  left:35%;
+  background: #d6d6d6;
+  color:black;
+  height: 50%;
+  width:30%;
+  z-index:99;
+  border-radius:10px;
+  display:none;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+p{
+  text-align: center;
+  font-weight:600;
+  margin:15px;
+  font-size: 18px;
+}
+.popupReleaseBtn{
+  background:transparent;
+  border:1px #888 solid;
+  color:black;
+  padding:20px;
+  text-align: center;
+  width:80%;
+  margin-left:42px;
+}
+.popupReleaseBtn:hover{
+  background:#c5c5c5;
+  transform:scaleX(1);
+}
+.popupMoreBtn{
+  background:transparent;
+  border:1px #888 solid;
+  color:black;
+  padding:20px;
+  text-align: center;
+  width:80%;
+  margin-left:42px;
+}
+.popupMoreBtn:hover{
+  background:#c5c5c5;
+  transform:scaleX(1);
+}
+.moreoptionsBtn{
+  background:transparent;
+  border:none;
+  color:black;
+  padding:20px;
+  text-align: center;
+  width:80%;
+  margin-left:42px;
+  margin-top:15px
+}
+.moreoptionsBtn:hover{
+  background:#adadad;
+  transform:scaleX(1);
+}
+.popupclose{
+  position:absolute;top:-3px;user-select:none;right:-3px;cursor:pointer;border-radius: 5px;
+  height:23px;
+  width:26px;
+  padding-top:-3px;
+}
+.popupclose:hover{
+  background:#c5c5c5;
+}
+.hidden {
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 1s;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 1s;
+}
