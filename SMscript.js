@@ -14,7 +14,8 @@ if (navigator.share) {
             console.error('Error sharing content:', error);
         }
     });
-} else {
+}
+/*else if(navigator.share){
     if (navigator.userAgent.match(/Android/i)) {
         try {
             await navigator.share({
@@ -34,7 +35,7 @@ if (navigator.share) {
         // Unsupported platform or browser
         console.error('Sharing not supported on this platform');
     }
-}
+}*/
 
 
 let content = 'Visit MTX666\'s page here:';
