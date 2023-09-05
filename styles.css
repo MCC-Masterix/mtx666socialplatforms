@@ -186,7 +186,7 @@ button:hover{
 @media (max-width: 850px) {
   .popupMore{
     top:10%;
-    left:2.4%;
+    left:4%;
     height: 50%;
     width:90%;
   }
