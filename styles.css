@@ -5,7 +5,7 @@ creator{
   color:rgba(255, 255, 255, 0.418);
   float:right;
   font-weight:bold;
-  position:absolute;
+  position:fixed;
   margin:3px;
   font-size: 14px;
 }
@@ -159,7 +159,7 @@ button:hover{
 @media (max-width: 700px) {
   .popupRelease {
       top: 5%;
-      left: 4.3%;
+      left:3.7%;
       height: 60%;
       width: 90%;
   }
@@ -185,9 +185,9 @@ button:hover{
 }
 @media (max-width: 850px) {
   .popupMore{
-    top:10%;
-    left:4%;
-    height: 50%;
+    top:5%;
+    left:3.7%;
+    height: 60%;
     width:90%;
   }
 }
