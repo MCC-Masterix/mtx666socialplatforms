@@ -15,7 +15,25 @@ if (navigator.share) {
         }
     });
 } else {
-    console.log('Web Share API is not supported in this browser.');
+    if (navigator.userAgent.match(/Android/i)) {
+        try {
+            await navigator.share({
+                text:'Visit MTX666\'s page here:',
+                url: 'https://mcc-masterix.github.io/mtx666socialplatforms/'
+            });
+            console.log('Content shared successfully');
+        } catch (error) {
+            console.error('Error sharing content:', error);
+        }
+    } else if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+        const shareData = 'Visit MTX666\'s page here:';
+        const shareData2 = 'https://mcc-masterix.github.io/mtx666socialplatforms/';
+        const iosShareURL = `sharer.php?text=${shareData.text}&url=${shareData2.url}`;
+        window.location.href = iosShareURL;
+    } else {
+        // Unsupported platform or browser
+        console.error('Sharing not supported on this platform');
+    }
 }
 
 
