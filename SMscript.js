@@ -27,12 +27,14 @@ window.id=top.id=id=>top.document.getElementById(id);
 
 document.getElementById('releaseBtnID').addEventListener('click', function(){
     document.getElementById('popupRelease').style.display='block';
+    document.getElementById('popupMore').style.display='none';
 });
 document.getElementById('closePopup').addEventListener('click', function(){
     document.getElementById('popupRelease').style.display='none';
 });
 document.getElementById('moreBtn').addEventListener('click', function(){
     document.getElementById('popupMore').style.display='block';
+    document.getElementById('popupRelease').style.display='none';
 });
 document.getElementById('closePopup2').addEventListener('click', function(){
     document.getElementById('popupMore').style.display='none';
