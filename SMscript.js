@@ -15,6 +15,37 @@ if (navigator.share) {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('preSaveForm');
+    const emailInput = document.getElementById('email');
+    const confirmEmailInput = document.getElementById('confirmEmail');
+    const notification = document.getElementById('notification');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const email = emailInput.value.trim();
+        const confirmEmail = confirmEmailInput.value.trim();
+
+        if (email !== confirmEmail) {
+            notification.textContent = 'Email addresses do not match.';
+            return;
+        }
+
+        // You can send the email to your server for storage and notification here.
+        // You may also want to store it in a database for later use.
+
+        // Simulate a successful submission.
+        setTimeout(function() {
+            notification.textContent = 'Email saved. You will be notified when the song is released.';
+            emailInput.value = '';
+            confirmEmailInput.value = '';
+        }, 2000); // You can replace this with actual server-side processing and notification.
+    });
+});
+
+
 /*else if(navigator.share){
     if (navigator.userAgent.match(/Android/i)) {
         try {
@@ -44,10 +75,14 @@ let link = 'https://mcc-masterix.github.io/mtx666socialplatforms/';
 window.ct=top.crt=crt=>top.document.createElement(crt);
 window.id=top.id=id=>top.document.getElementById(id);
 
+document.getElementById('releaseBtn_2').addEventListener('click', function(){
+    open('https://on.soundcloud.com/hA9GDKUn79TGUEq68');
+});
+/*
 document.getElementById('releaseBtnID').addEventListener('click', function(){
     document.getElementById('popupRelease').style.display='block';
     document.getElementById('popupMore').style.display='none';
-});
+});*/
 document.getElementById('closePopup').addEventListener('click', function(){
     document.getElementById('popupRelease').style.display='none';
 });
@@ -60,6 +95,12 @@ document.getElementById('closePopup2').addEventListener('click', function(){
 });
 
 //Redirects
+document.getElementById('checkmm').addEventListener('click', function(){
+    open('https://mcc-masterix.github.io/masterixmusicsocialplatforms/');
+});
+document.getElementById('tg').addEventListener('click', function(){
+    open('https://t.me/theuncensoreddshit');
+});
 document.getElementById('sc').addEventListener('click', function(){
     open('https://on.soundcloud.com/cfja9');
 });
